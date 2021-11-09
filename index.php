@@ -1,5 +1,6 @@
 <?php 
-
+echo "entro";
+exit;
 session_name('carrito');
 session_start();
 
