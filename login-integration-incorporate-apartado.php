@@ -37,7 +37,7 @@ if(isset($_GET["email"]) || isset($_GET["item"]))
 
 
 
-		$queryResult = $pdo->prepare("SELECT codigo, nombre, pais FROM control_ci_test where correo = :email and b2 = 1 and tipo = 'CLUB' and estatus = 0");
+		$queryResult = $pdo->prepare("SELECT codigo, nombre, pais FROM nikkenla_marketing.control_ci_test where correo = :email and b2 = 1 and tipo = 'CLUB' and estatus = 0");
 
 		$queryResult->execute(array(':email' => $email));
 
