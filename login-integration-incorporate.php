@@ -10,7 +10,8 @@ session_name('carrito');
 
 session_start();
 
-
+echo "entro";
+		exit;
 
 if(isset($_GET["email"]) || isset($_GET["item"]))
 
@@ -35,8 +36,7 @@ if(isset($_GET["email"]) || isset($_GET["item"]))
 
 		/*vars*/
 
-		echo "entro";
-		exit;
+		
 
 		$queryResult = $pdo->prepare("SELECT codigo, nombre, pais FROM nikkenla_marketing.control_ci_test where correo = :email");
 
