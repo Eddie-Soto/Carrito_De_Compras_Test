@@ -30,11 +30,11 @@ $data = base64_encode($email . "&" . $products_checkout . "&" . $discount_letter
 
 if($kit == 1)
 {
-	echo "1///https://nikkenlatam.com/services/checkout/redirect.php?app=incorporacion&data=$data";
+	echo "1///https://nikkenlatam.com/services/checkout/testredirect.php?app=incorporacion&data=$data";
 }
 else
 {
-	echo "1///https://nikkenlatam.com/services/checkout/redirect.php?app=710&data=$data";
+	echo "1///https://nikkenlatam.com/services/checkout/testredirect.php?app=710&data=$data";
 }
 
 ?>
