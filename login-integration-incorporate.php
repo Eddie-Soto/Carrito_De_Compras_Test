@@ -63,7 +63,7 @@ if(isset($_GET["email"]) || isset($_GET["item"]))
 
 			$_SESSION["country"] = $country_abi;
 
-			if($country_abi == 1){	$discount = 1;	}
+			if($country_abi == 1){	$discount = 0;	}
 
 
 
