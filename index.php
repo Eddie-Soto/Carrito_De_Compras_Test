@@ -13,12 +13,7 @@ else
 	$name_abi = $_SESSION["name"];
 	$country_abi = $_SESSION["country"];
 }
-$_SESSION["products"] = array();
-foreach($_SESSION['products'] as $posicion => $products){
-	list($product_detail) = explode('-', $products);
-	echo $product_detail;
-	exit;
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -283,7 +278,7 @@ foreach($_SESSION['products'] as $posicion => $products){
 									</div>
 									<?php 
 
-									if($country_abi == 1)
+									if($country_abi == 1 && $_SESSION["kit"] != 1)
 									{
 										?>
 										<div class="row">
