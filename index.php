@@ -13,7 +13,12 @@ else
 	$name_abi = $_SESSION["name"];
 	$country_abi = $_SESSION["country"];
 }
-
+$_SESSION["products"] = array();
+foreach($_SESSION['products'] as $posicion => $products){
+	list($product_detail) = explode('-', $products);
+	echo $product_detail;
+	exit;
+}
 ?>
 
 <!DOCTYPE html>
