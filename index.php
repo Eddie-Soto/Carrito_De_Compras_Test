@@ -80,7 +80,7 @@ if (empty($_SESSION["code"])) {
 					<div class="col-sm-6 ">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href=""><i class="fa fa-address-card"></i> Bienvenido <strong><?php echo $name_abi ?></strong></a></li>
+								<li><a href=""><i class="fa fa-address-card"></i> Bienvenido Test <strong><?php echo $name_abi ?></strong></a></li>
 							</ul>
 						</div>
 					</div>
