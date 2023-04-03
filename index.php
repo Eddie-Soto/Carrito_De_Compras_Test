@@ -344,7 +344,7 @@ if (empty($_SESSION["code"])) {
 				icon: 'info',
 				html: '<img src="https://storage.googleapis.com/proyectos_latam/Incorporacionweb/images_varios_micrositios/descuento_carrito.png" alt="img" style ="width:100%">',
 				showCloseButton: true,
-				showCancelButton: true,
+				showCancelButton: false,
 				focusConfirm: false,
 				confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
 				confirmButtonAriaLabel: 'Thumbs up, great!',
