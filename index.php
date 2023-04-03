@@ -329,7 +329,7 @@ if (empty($_SESSION["code"])) {
 			</div>
 		</div>
 	</footer><!--/Footer-->
-	
+
 	<script src="js/jquery.js"></script>
 	<script src="js/price-range.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>
@@ -350,6 +350,10 @@ if (empty($_SESSION["code"])) {
 				confirmButtonAriaLabel: 'Thumbs up, great!',
 				cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
 				cancelButtonAriaLabel: 'Thumbs down'
+			}).then((result) => {
+				if (result.isConfirmed) {
+					$("#modal-shopping").modal();
+				}
 			})
 		};
 	</script>
@@ -375,7 +379,7 @@ if (empty($_SESSION["code"])) {
 	if ($_SESSION["kit"] == 1) {
 	?>
 		<script>
-		//	$("#modal-shopping").modal();
+			//	$("#modal-shopping").modal();
 		</script>
 	<?php
 	}
