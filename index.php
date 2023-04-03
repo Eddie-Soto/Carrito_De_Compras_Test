@@ -336,7 +336,7 @@ if (empty($_SESSION["code"])) {
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.prettyPhoto.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
 		window.onload = function() {
 			Swal.fire({
