@@ -1,15 +1,12 @@
-<?php 
+<?php
 
 session_name('carrito');
 session_start();
 
-if(empty($_SESSION["code"]))
-{
-	header ('Location: https://mitiendanikken.com/');
+if (empty($_SESSION["code"])) {
+	header('Location: https://mitiendanikken.com/');
 	exit;
-}
-else
-{
+} else {
 	$name_abi = $_SESSION["name"];
 	$country_abi = $_SESSION["country"];
 }
@@ -18,56 +15,57 @@ else
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<style type="text/css">
 		blockquote.blockquote {
-    color: #010407;
-    padding: 30px 26px 30px 20px;
-    font-size: 2rem;
-    background-color: #ffffff;
-    border-left: 4px solid #3862f5;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
-    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
-    margin-bottom: 3rem !important;
-    font-family: "Homer Simpson UI";
-}
+			color: #010407;
+			padding: 30px 26px 30px 20px;
+			font-size: 2rem;
+			background-color: #ffffff;
+			border-left: 4px solid #3862f5;
+			border-bottom-right-radius: 8px;
+			border-top-right-radius: 8px;
+			border-bottom-left-radius: 8px;
+			border-top-left-radius: 8px;
+			box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+			margin-bottom: 3rem !important;
+			font-family: "Homer Simpson UI";
+		}
 	</style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Incorporación 7/10 - Un comienzo ganador">
-    <meta name="author" content="NIKKEN Latinoamérica">
-    <title>Carrito de compras | NIKKEN Latinoamérica</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Incorporación 7/10 - Un comienzo ganador">
+	<meta name="author" content="NIKKEN Latinoamérica">
+	<title>Carrito de compras | NIKKEN Latinoamérica</title>
 
-    <!-- No indexación -->
+	<!-- No indexación -->
 	<meta name="robots" content="noindex">
 	<meta name="googlebot" content="noindex">
 	<!-- No indexación -->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/price-range.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/price-range.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="custom/img/icons/favicon.ico" type="image/x-icon">
+    <![endif]-->
+	<link rel="shortcut icon" href="custom/img/icons/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" type="image/x-icon" href="custom/img/icons/apple-touch-icon-57x57-precomposed.png">
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="custom/img/icons/apple-touch-icon-72x72-precomposed.png">
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="custom/img/icons/apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="custom/img/icons/apple-touch-icon-144x144-precomposed.png">
 
 	<!-- Librerias de notificaciones   -->
-    <link href="plugins/notification/animate.min.css" rel="stylesheet"/>
-    <link href="plugins/notification/paper-dashboard.css" rel="stylesheet"/>
+	<link href="plugins/notification/animate.min.css" rel="stylesheet" />
+	<link href="plugins/notification/paper-dashboard.css" rel="stylesheet" />
 
-    <!--BUSCADOR EDDIE-->
-    <link href="custom/css/search-multiple.css" rel="stylesheet">
+	<!--BUSCADOR EDDIE-->
+	<link href="custom/css/search-multiple.css" rel="stylesheet">
 
 	<!-- Librerias adicionales -->
 	<link href="custom/css/main.css" rel="stylesheet">
@@ -98,7 +96,7 @@ else
 				</div>
 			</div>
 		</div><!--/header_top-->
-		
+
 		<div class="header-middle"><!--header-middle-->
 			<div class="container">
 				<div class="row">
@@ -118,22 +116,22 @@ else
 			</div>
 		</div><!--/header-middle-->
 	</header>
-	
+
 	<section>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<div class="features_items"><!--features_items-->						
+					<div class="features_items"><!--features_items-->
 						<div class="row">
 							<!--INICIA CAMBIO PRA MEX-->
 							<div class="col-sm-12" <?php if ($country_abi != 2) { ?> hidden="true" <?php
-							
-						} ?>>
+
+																								} ?>>
 								<div class="row">
 
 									<div class="col-sm-2 col-md-2 menu-brand" style="margin-right: 30px;">
 										<div class="text-center">
-											
+
 											<a data-scroll href="#descanso">
 												<h4 class="title brand-description" style="color: #666;">Descanso</h4>
 												<img src="custom/img/brands/kenkosleep.png" alt="KENKO SLEEP" style="width: 104px; height: 44px !important;">
@@ -218,7 +216,7 @@ else
 											<a data-scroll href="#joyeria">
 												<h4 class="title brand-description" style="color: #666;">Joyería</h4>
 												<img src="custom/img/brands/kenkofashion.png" alt="KENKO FASHION" style="width: 104px; height: 44px !important;">
-											</a> 
+											</a>
 										</div>
 
 
@@ -226,7 +224,7 @@ else
 
 									<div class="col-sm-2 col-md-2 menu-brand" style="margin-right: 30px;">
 										<div class="text-center">
-											<a data-scroll href="#cuidadodelapiel" >
+											<a data-scroll href="#cuidadodelapiel">
 												<h4 class="title brand-description" style="color: #666;">Cuidado de la piel</h4>
 												<img src="custom/img/brands/trueelements.png" alt="TRUE ELEMENTS" style="width: 104px; height: 44px !important;">
 											</a>
@@ -253,34 +251,33 @@ else
 							<!--FIN CAMBIO MEX-->
 
 
-				           <div class="col-sm-12">
+							<div class="col-sm-12">
 
-				               	<div class="form-group text-center">
-				               		<label for="ss-name-filter">A continuación ingresa el código o nombre del producto que quieres añadir al carrito de compras <i class="fa fa-shopping-basket"></i></label>
-				               		<!-- BUSCADOR COMPRA KOI -->
-				               		<form class="form-inline my-2 my-lg-0 justify-content-center" <?php if ($country_abi != 2) { ?> hidden="true" <?php
-							
-						} ?> >
-				               			<div class="w-100">
-				               				<input type="text" class="w-100 form-control product-search br-30 mb-4" id="input-search" placeholder="Buscar productos" >
-				               			</div>
-				               		</form>
-				               		<!-- BUSCADOR COMPRA KOI -->             
-				                    <div class="form-group margin-top" <?php if ($country_abi == 2) { ?> hidden="true" <?php
-							
-						} ?>>
+								<div class="form-group text-center">
+									<label for="ss-name-filter">A continuación ingresa el código o nombre del producto que quieres añadir al carrito de compras <i class="fa fa-shopping-basket"></i></label>
+									<!-- BUSCADOR COMPRA KOI -->
+									<form class="form-inline my-2 my-lg-0 justify-content-center" <?php if ($country_abi != 2) { ?> hidden="true" <?php
 
-				                    
+																																				} ?>>
+										<div class="w-100">
+											<input type="text" class="w-100 form-control product-search br-30 mb-4" id="input-search" placeholder="Buscar productos">
+										</div>
+									</form>
+									<!-- BUSCADOR COMPRA KOI -->
+									<div class="form-group margin-top" <?php if ($country_abi == 2) { ?> hidden="true" <?php
+
+																													} ?>>
+
+
 										<div class="input-group">
 											<input type="text" class="form-control text-center" id="ss-name-filter" placeholder="Código o nombre del producto">
 											<div class="input-group-addon"><i class="fa fa-search"></i></div>
 										</div>
 									</div>
-									<?php 
+									<?php
 
-									if($country_abi == 1 && $_SESSION["kit"] != 1)
-									{
-										?>
+									if ($country_abi == 1 && $_SESSION["kit"] != 1) {
+									?>
 										<div class="row">
 											<div class="col-sm-6">
 												<input type="radio" name="optionsRadios" id="optionsRadios1" value="1" onclick="Change_discount(1);" checked><strong>&nbsp;<u>Es una compra para mi</u></strong>
@@ -289,14 +286,14 @@ else
 												<input type="radio" name="optionsRadios" id="optionsRadios2" value="0" onclick="Change_discount(0);"><strong>&nbsp;<u>Es una compra para mi cliente</u></strong>
 											</div>
 										</div>
-										<?php
+									<?php
 									}
 
 									?>
-				                </div>
-				           </div>
-				        </div>
-				        <hr style="border: 1px solid #007E47; border-style: dashed; margin-top: 5px;">
+								</div>
+							</div>
+						</div>
+						<hr style="border: 1px solid #007E47; border-style: dashed; margin-top: 5px;">
 						<div id="view-products" class="searchable-container ss-box"></div>
 
 					</div><!--features_items-->
@@ -322,7 +319,7 @@ else
 			</div>
 		</div>
 	</div>
-	
+
 	<footer id="footer"><!--Footer-->
 		<div class="footer-bottom">
 			<div class="container">
@@ -333,40 +330,64 @@ else
 		</div>
 	</footer><!--/Footer-->
 	
-    <script src="js/jquery.js"></script>
+	<script src="js/jquery.js"></script>
 	<script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+	<script>
+		window.onload = function() {
+			Swal.fire({
+				title: '<strong>Felicidades!!</strong>',
+				icon: 'info',
+				html: '<img src="https://storage.googleapis.com/proyectos_latam/Incorporacionweb/images_varios_micrositios/descuento_carrito.png" alt="img" style ="width:100%">',
+				showCloseButton: true,
+				showCancelButton: true,
+				focusConfirm: false,
+				confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
+				confirmButtonAriaLabel: 'Thumbs up, great!',
+				cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+				cancelButtonAriaLabel: 'Thumbs down'
+			})
+		};
+	</script>
 
-    <!-- Librerias adicionales -->
-    <script src="plugins/Interpretador Ajax/interpretadorAjax.js"></script>
-    <script src="plugins/buscadorDiv/simpleSort.js"></script>
+	<!-- Librerias adicionales -->
+	<script src="plugins/Interpretador Ajax/interpretadorAjax.js"></script>
+	<script src="plugins/buscadorDiv/simpleSort.js"></script>
 
-    <!-- Librerias de notificaciones   -->
-    <script src="plugins/notification/bootstrap-notify.js"></script>
-	
+	<!-- Librerias de notificaciones   -->
+	<script src="plugins/notification/bootstrap-notify.js"></script>
+
 	<!--buscador-->
 	<script src="custom/js/custom-search-multiple.js"></script>
-	
+
 	<script src="custom/js/main.js"></script>
 	<script src="custom/js/smooth-scroll.min.js"></script>
-    <script>View_products(); View_detail_products();</script>
-	
-	<?php 
-		if($_SESSION["kit"] == 1) 
-		{
-			?>
-			<script>
-		    	$("#modal-shopping").modal();
-		    </script>
-			<?php
-		}
+	<script>
+		View_products();
+		View_detail_products();
+	</script>
+
+	<?php
+	if ($_SESSION["kit"] == 1) {
+	?>
+		<script>
+			$("#modal-shopping").modal();
+		</script>
+	<?php
+	}
 	?>
 
 	<script type="text/javascript" src="plugins/Inactivo/inactivo.js"></script> <!-- CERRAR SESION INACTIVO -->
-	<script> $.idle(600, function() {window.location.href = "http://mitiendanikken.com/"; }); </script><!-- CERRAR SESION INACTIVO -->
-    
+	<script>
+		$.idle(600, function() {
+			window.location.href = "http://mitiendanikken.com/";
+		});
+	</script><!-- CERRAR SESION INACTIVO -->
+
 </body>
+
 </html>
