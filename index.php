@@ -340,7 +340,7 @@ if (empty($_SESSION["code"])) {
 	<script>
 		window.onload = function() {
 			Swal.fire({
-				title: '<strong>Felicidades!!<?php echo $name_abi ?></strong>',
+				title: '<strong>Felicidades!! <br><?php echo $name_abi ?></strong>',
 				icon: 'info',
 				html: '<img src="https://storage.googleapis.com/proyectos_latam/Incorporacionweb/images_varios_micrositios/descuento_carrito.png" alt="img" style ="width:100%">',
 				showCloseButton: true,
