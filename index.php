@@ -367,15 +367,15 @@ if (empty($_SESSION["code"])) {
 	<script src="custom/js/main.js"></script>
 	<script src="custom/js/smooth-scroll.min.js"></script>
 	<script>
-		//View_products();
-		//View_detail_products();
+		View_products();
+		View_detail_products();
 	</script>
 
 	<?php
 	if ($_SESSION["kit"] == 1) {
 	?>
 		<script>
-			$("#modal-shopping").modal();
+		//	$("#modal-shopping").modal();
 		</script>
 	<?php
 	}
