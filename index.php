@@ -340,7 +340,7 @@ if (empty($_SESSION["code"])) {
 	<script>
 		window.onload = function() {
 			Swal.fire({
-				title: '<strong>Felicidades!! <br><?php echo $name_abi ?></strong>',
+				title: 'Bienvenid@ a la comunidad NIKKEN <?php echo $name_abi ?> al unirte en el mes de abril cuentas con el 10% de descuento en sistemas de agua seleccionados. <br>Da el primer paso hacia tu bienestar y obtén bonos adicionales.</strong>',
 				icon: 'info',
 				html: '<img src="https://storage.googleapis.com/proyectos_latam/Incorporacionweb/images_varios_micrositios/descuento_carrito.png" alt="img" style ="width:100%">',
 				showCloseButton: true,
