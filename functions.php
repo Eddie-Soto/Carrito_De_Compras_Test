@@ -74,7 +74,7 @@ function Search_product_letter($sku, $letter, $retail, $suggested_price, $countr
         $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $queryResult = $pdo->prepare("SELECT DISTINCT t0.menudeo, t0.precio_sugerido from control_art t0 where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1 and t0.precio_sugerido > 0");
+        $queryResult = $pdo->prepare("SELECT DISTINCT t0.menudeo, t0.precio_sugerido from control_art_test t0 where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1 and t0.precio_sugerido > 0");
         $queryResult->execute(array(':country' => $country, ':sku' => $sku));
         $done = $queryResult->fetch();
         if($done)
@@ -124,7 +124,7 @@ function Checkout_product($sku, $country, $letter)
             $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $queryResult = $pdo->prepare("SELECT sku from control_art t0 where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1 and t0.precio_sugerido > 0");
+            $queryResult = $pdo->prepare("SELECT sku from control_art_test t0 where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1 and t0.precio_sugerido > 0");
             $queryResult->execute(array(':country' => $country, ':sku' => $sku_letter));
             $done = $queryResult->fetch();
             if($done)

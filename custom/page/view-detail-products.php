@@ -43,13 +43,13 @@ foreach($_SESSION['products'] as $posicion => $products)
 	if($sku == '9707' || $sku == '9708' || $sku == '9709' || $sku == '9710' || $sku == '9711' || $sku == '9712' || $sku == '9713' || $sku == '9714' ){
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, CASE WHEN t0.nombre_producto is null or t0.nombre_producto = '' THEN t0.nombre_original_producto ELSE t0.nombre_producto END as nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.menudeo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, CASE WHEN t0.nombre_producto is null or t0.nombre_producto = '' THEN t0.nombre_original_producto ELSE t0.nombre_producto END as nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.menudeo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1");
 
 	}else{
 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, CASE WHEN t0.nombre_producto is null or t0.nombre_producto = '' THEN t0.nombre_original_producto ELSE t0.nombre_producto END as nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.menudeo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1 and t0.precio_sugerido > 0");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, CASE WHEN t0.nombre_producto is null or t0.nombre_producto = '' THEN t0.nombre_original_producto ELSE t0.nombre_producto END as nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.menudeo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.sku = :sku and t0.pais = :country and t0.esta_activo = 1 and t0.precio_sugerido > 0");
 
 	}
 	

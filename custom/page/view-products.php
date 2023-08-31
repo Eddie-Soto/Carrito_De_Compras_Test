@@ -18,7 +18,7 @@ if ($country == 2) {
 
 	</blockquote>
 	<?php 
-	$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 2");
+	$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 2");
 	$queryResult->execute(array(':country' => $country));
 	while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 	{
@@ -69,7 +69,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 3");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 3");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -120,7 +120,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 4");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 4");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -171,7 +171,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 5");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 5");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -222,7 +222,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 6");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 6");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -273,7 +273,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 7");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 7");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -325,7 +325,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 8");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 8");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -377,7 +377,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 9");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 9");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -428,7 +428,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 10");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 10");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -479,7 +479,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 11");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca = 11");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -530,7 +530,7 @@ if ($country == 2) {
 		<?php 
 
 
-		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca != 2 and t0.marca != 3 and t0.marca != 4 and t0.marca != 5 and t0.marca != 6 and t0.marca != 7 and t0.marca != 8 and t0.marca != 9 and t0.marca != 10 and t0.marca != 11");
+		$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() and t0.marca != 2 and t0.marca != 3 and t0.marca != 4 and t0.marca != 5 and t0.marca != 6 and t0.marca != 7 and t0.marca != 8 and t0.marca != 9 and t0.marca != 10 and t0.marca != 11");
 		$queryResult->execute(array(':country' => $country));
 		while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 		{
@@ -573,7 +573,7 @@ if ($country == 2) {
 </div>
 <?php
 		}else{
-$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() order by RAND()");
+$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() order by RAND()");
 $queryResult->execute(array(':country' => $country));
 while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 {

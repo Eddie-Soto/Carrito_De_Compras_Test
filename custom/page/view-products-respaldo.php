@@ -9,7 +9,7 @@ session_start();
 $country = $_SESSION["country"];
 /*vars*/
 
-$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() order by RAND()");
+$queryResult = $pdo->prepare("SELECT DISTINCT t0.sku, t0.nombre_producto, t0.precio_sugerido, t0.aplica_iva, t1.valor, t0.tags, t0.puntos, t0.vc_mayoreo from control_art_test t0 inner join control_iva t1 on t0.pais = t1.pais where t0.pais = :country and t0.aplica_tv = 1 and t0.esta_activo = 1 and t0.precio_sugerido > 0 and t0.valido_desde <= now() and t0.valido_hasta >= now() order by RAND()");
 $queryResult->execute(array(':country' => $country));
 while($row = $queryResult->fetch(PDO::FETCH_ASSOC))
 {
